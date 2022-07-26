@@ -1,0 +1,911 @@
+{
+    "info": {
+		"name": "LMS PROJECT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+
+    "item":[
+        {
+            "name":"Authentication",
+            "item":[
+                {
+                    "name": "Register",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"email",
+                                    "value": "anyemail@gmail.com",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"username",
+                                    "value": "anyusername",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstname",
+                                    "value": "anyName",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"lastname",
+                                    "value": "anyemailastname",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"phonenumber",
+                                    "value": "anyphone",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"isTeacher",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"isStudent",
+                                    "value": "0",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"password",
+                                    "value": "anypassword",
+                                    "type":"text"
+                                }
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/Signup/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "Signup/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "SignIn",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"email",
+                                    "value": "anyemail@gmail.com",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"password",
+                                    "value": "anypassword",
+                                    "type":"text"
+                                }
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/SignIn/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "SignIn/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "SignOut",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/SignOut/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "SignOut/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                }
+            ]
+        },
+        {
+            "name":"AllData",
+            "item":[
+                {
+                    "name": "AllUsers",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AllUsers/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AllUsers/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "AllExam",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AllExam/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AllExam/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "AllCourses",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AllCourses/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AllCourses/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "AllBatch",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AllBatch/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AllBatch/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "AllTask",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AllTask/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AllTask/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                }
+            ]
+        },
+        {
+            "name":"Create",
+            "item":[
+                {
+                    
+                    "name": "CreateCourse",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+          
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"name",
+                                    "value": "anyname",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"details",
+                                    "value": "anydetails",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"numberofmodules",
+                                    "value": "2",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fistmodulename",
+                                    "value": "name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fistmoduledays",
+                                    "value": "24",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstmoduleteacher",
+                                    "value": "2",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondmodulename",
+                                    "value": "name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondmoduledays",
+                                    "value": "12",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondmoduleteacher",
+                                    "value": "3",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdmodulename",
+                                    "value": "name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdmoduledays",
+                                    "value": "16",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdmoduleteacher",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthmodulename",
+                                    "value": "name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthmoduledays",
+                                    "value": "45",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthmoduleteacher",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthmodulename",
+                                    "value": "name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthmoduledays",
+                                    "value": "45",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthmoduleteacher",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"sixthmodulename",
+                                    "value": "name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"sixthmoduledays",
+                                    "value": "29",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"sixthmoduleteacher",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"seventhmodulename",
+                                    "value": "name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"seventhmoduledays",
+                                    "value": "48",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"seventhmoduleteacher",
+                                    "value": "1",
+                                    "type":"text"
+                                }
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/CreateCourse/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "CreateCourse/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "CreateBatch",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+             
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"name",
+                                    "value": "anyname",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"details",
+                                    "value": "anydetails",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"startdate",
+                                    "value": "2022-01-21 07:45",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"enddate",
+                                    "value": "2022-01-21 02:35",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"course",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"modulename",
+                                    "value": "modulename",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"isActive",
+                                    "value": "1",
+                                    "type":"text"
+                                }
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/CreateBatch/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "CreateBatch/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "CreateTask",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+             
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"name",
+                                    "value": "anyname",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"details",
+                                    "value": "anydetails",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"startdate",
+                                    "value": "2022-01-21 07:45",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"enddate",
+                                    "value": "2022-01-21 04:30",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"batch",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"task",
+                                    "value": "Task to Post",
+                                    "type":"text"
+                                }
+                               
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/CreateTask/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "CreateTask/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "CreateExam",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+                
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"name",
+                                    "value": "anyname",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"details",
+                                    "value": "anydetails",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"examdate",
+                                    "value": "2022-01-21 07:45",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"duration",
+                                    "value": "3",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"batch",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"course",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstquestion",
+                                    "value": "AnyQsn",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstqsnoptionone",
+                                    "value": "Ans1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstqsnoptiontwo",
+                                    "value": "Ans2",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstqsnoptionthree",
+                                    "value": "Ans3",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstqsnoptionfour",
+                                    "value": "Ans4",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"firstqsnAnswer",
+                                    "value": "Right Answer",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondquestion",
+                                    "value": "AnyQsn",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondqsnoptionone",
+                                    "value": "Ans1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondqsnoptiontwo",
+                                    "value": "Ans2",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondqsnoptionthree",
+                                    "value": "Ans3",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondqsnoptionfour",
+                                    "value": "Ans4",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"secondqsnAnswer",
+                                    "value": "Right Answer",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdquestion",
+                                    "value": "AnyQsn",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdqsnoptionone",
+                                    "value": "Ans1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdqsnoptiontwo",
+                                    "value": "Ans2",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdqsnoptionthree",
+                                    "value": "Ans3",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdqsnoptionfour",
+                                    "value": "Ans4",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"thirdqsnAnswer",
+                                    "value": "Right Answer",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthquestion",
+                                    "value": "AnyQsn",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthqsnoptionone",
+                                    "value": "Ans1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthqsnoptiontwo",
+                                    "value": "Ans2",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthqsnoptionthree",
+                                    "value": "Ans3",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthqsnoptionfour",
+                                    "value": "Ans4",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fourthqsnAnswer",
+                                    "value": "Right Answer",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthquestion",
+                                    "value": "AnyQsn",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthqsnoptionone",
+                                    "value": "Ans1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthqsnoptiontwo",
+                                    "value": "Ans2",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthqsnoptionthree",
+                                    "value": "Ans3",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthqsnoptionfour",
+                                    "value": "Ans4",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"fifthqsnAnswer",
+                                    "value": "Right Answer",
+                                    "type":"text"
+                                }
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/CreateTask/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "CreateTask/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                }
+                
+            ]
+        },
+        {
+            "name":"Common",
+            "item":[
+                {
+                    "name": "ProfileDetails",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/ProfileDetails/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "ProfileDetails/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "GetEventsTeacherandBatchWise",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/GetEventsTeacherandBatchWise/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "GetEventsTeacherandBatchWise/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                }
+            ]
+        },
+        {
+            "name":"StudentApi",
+            "item":[
+                {
+                    
+                    "name": "TaskSubmit",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+          
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"taskanswer",
+                                    "value": "answer of task",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"task",
+                                    "value": "1",
+                                    "type":"text"
+                                }
+                                
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/TaskSubmit/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "TaskSubmit/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "AllTaskinfo",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AllTaskinfo/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AllTaskinfo/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                },
+                {
+                    "name": "AllExamInfo",
+                    "request":{
+                        "method": "GET",
+                        "header": [],
+                       
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AllExamInfo/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AllExamInfo/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                }
+            ]
+        },
+        {
+            "name":"Batch & Course Assignment",
+            "item":[
+                {
+                    
+                    "name": "AssignUser",
+                    "request":{
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key":"Content-Type",
+                                "value":"{application/json}",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode":"formdata",
+                            "formdata":[
+                                {
+                                    "key":"batch",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"course",
+                                    "value": "1",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"activeModule",
+                                    "value": "module name",
+                                    "type":"text"
+                                },
+                                {
+                                    "key":"user",
+                                    "value": "1",
+                                    "type":"text"
+                                }
+                                
+                                
+                            ]
+                        },
+                        "url":{
+                            "raw":"https://lmsbackends.pythonanywhere.com/lms/AssignUser/",
+                            "host":[
+                                "https://lmsbackends.pythonanywhere.com/lms"
+                            ],
+                            "path":[
+                                "AssignUser/"
+                            ]
+                        }
+                    },
+                    "response":[]
+                }
+                
+            ]
+        }
+        
+
+    ]
+}
